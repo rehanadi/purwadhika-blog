@@ -4,7 +4,7 @@ import { BASE_URL } from '@/constants'
 
 const fetchBlogs = async () => {
   try {
-    const res = await fetch(`${BASE_URL}/api/blogs`)
+    const res = await fetch(`${BASE_URL}/api/blogs`, { next: { revalidate: 60 } })
     const data = await res.json()
     return data.blogs
   } catch (error) {

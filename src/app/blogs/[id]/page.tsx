@@ -9,7 +9,7 @@ type Props = {
 
 const fetchBlog = async (id: string) => {
   try {
-    const res = await fetch(`${BASE_URL}/api/blogs/${id}`)
+    const res = await fetch(`${BASE_URL}/api/blogs/${id}`, { next: { revalidate: 60 } })
     const data = await res.json()
     return data.blog
   } catch (error) {
