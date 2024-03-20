@@ -7,7 +7,8 @@ const BlogCard = ({ blog }: { blog: TBlog }) => {
       <div className="card w-100">
         <img 
           src={blog.image} 
-          className="card-img-top" 
+          className="card-img-top object-fit-cover"
+          style={{ height: '13rem' }}
           alt="Blog" 
         />
         

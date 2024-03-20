@@ -29,7 +29,9 @@ const BlogPage = async ({ params: { id } }: Props) => {
           <div className="col-12">
             <h1>{blog.title}</h1>
 
-            <img src={blog.image} alt={blog.title} className="w-100 mt-5" />
+            <figure className="text-center mt-5">
+              <img src={blog.image} alt={blog.title} className="w-75" />
+            </figure>
 
             <div className="mt-5">
               {blog?.content?.map((content: any) => {
