@@ -1,0 +1,5 @@
+export const BASE_URL = process.env.BASE_URL as string || ''
+export const CONTENTFUL_BASE_URL = process.env.CONTENTFUL_BASE_URL as string || ''
+export const CONTENTFUL_SPACE_ID = process.env.CONTENTFUL_SPACE_ID as string || ''
+export const CONTENTFUL_ENVIRONMENT_ID = process.env.CONTENTFUL_ENVIRONMENT_ID as string || ''
+export const CONTENTFUL_ACCESS_TOKEN = process.env.CONTENTFUL_ACCESS_TOKEN as string || ''
